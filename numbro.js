@@ -1143,14 +1143,14 @@
         format: function(inputString, roundingFunction) {
             return formatNumbro(this,
                 inputString ? inputString : defaultFormat,
-                (roundingFunction !== undefined) ? roundingFunction : Math.round
+                (roundingFunction !== undefined) ? roundingFunction : Math.floor
             );
         },
 
         formatCurrency: function(inputString, roundingFunction) {
             return formatCurrency(this,
                 inputString ? inputString : defaultCurrencyFormat,
-                (roundingFunction !== undefined) ? roundingFunction : Math.round
+                (roundingFunction !== undefined) ? roundingFunction : Math.floor
             );
         },
 
