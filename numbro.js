@@ -1108,6 +1108,7 @@
      * finite precision.
      */
     function multiplier(x) {
+        if (!x) return 1;
         var parts = x.toString().split('.');
         if (parts.length < 2) {
             return 1;
